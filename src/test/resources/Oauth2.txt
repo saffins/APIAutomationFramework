@@ -1,0 +1,13 @@
+For 0Auth2
+There are 5 things
+Client - example book myshow
+Clientid  public - shown in sign in URL when we do sign in from google
+Client secret id - its not public
+Resource owner - human
+resource /authorization server - Google
+
+User sign in to google by hitting authorization server and get code
+Book myshow capture that code once we click sign on
+Bookmyshow will get firstname,lastname and email , it depends on what bookmshow is asking its called scope
+Its returned with firstname, lastname and email
+Whatever we do in the bookmyshow app for everycall access token will be sent
