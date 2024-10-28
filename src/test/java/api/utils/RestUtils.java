@@ -22,8 +22,7 @@ public class RestUtils {
     }
 
     public static Response performUpdate(String endpoint, String param){
-        return RestAssured.given().log().all().baseUri(Routes.base_url).contentType(ContentType.JSON).
-                pathParam("username",param).put(endpoint).then().log().all().extract().response();
+        return RestAssured.given().log().all().baseUri(Routes.base_url).contentType(ContentType.JSON).put(endpoint).then().log().all().extract().response();
 
     }
 
